@@ -71,7 +71,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20fb-1.jpg",
+            url: "https://raw.githubusercontent.com/Rrusi2006/Bot-images/refs/heads/main/download%20(1).jpeg",
           },
           caption: desc,
         },
