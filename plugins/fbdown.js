@@ -60,7 +60,7 @@ cmd(
 
       // Prepare and send the message with video details
       let desc = `
-*❤️ RUSITH MD ❤️*
+*❤️ RUSITH MD V1 ❤️*
 *FB VIDEO DOWNLODER*
 
 👻 *Quality*: ${hd ? "HD Available" : "SD Only"}
@@ -99,7 +99,7 @@ cmd(
         return reply("*No downloadable video found!* 😈");
       }
 
-      return reply("*RUSITH_MD_BOT* ❤️😇");
+      return reply("*RUSITH_MD_V1_BOT* ❤️😇");
     } catch (e) {
       console.error(e);
       reply(`*Error:* ${e.message || e}`);
