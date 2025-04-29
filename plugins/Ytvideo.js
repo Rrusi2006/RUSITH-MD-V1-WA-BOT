@@ -25,7 +25,7 @@ cmd(
       const url = data.url;
 
       // Video metadata description
-      let desc = 🎥 *RUSITH_MD_VIDEO DOWNLOADER* 🎥
+      let desc = *RUSITH_MD_VIDEO DOWNLOADER*
      
 👻 *Title* : ${data.title}
 👻 *Duration* : ${data.timestamp}
