@@ -25,7 +25,7 @@ cmd(
       const url = data.url;
 
       // Video metadata description
-      let desc = 🎬RUSITH_MD_VIDEO DOWNLOADER🎥
+      let desc = 🎥 *RUSITH_MD_VIDEO DOWNLOADER* 🎥
      
 👻 *Title* : ${data.title}
 👻 *Duration* : ${data.timestamp}
@@ -34,7 +34,7 @@ cmd(
 👻 *Channel* : ${data.author.name}
 👻 *Link* : ${data.url}
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 ❤️𝙍𝙐𝙎𝙄𝙏𝙃_𝙈𝘿_𝘽𝙊𝙏❤️
+𝐌𝐚𝐝𝐞 𝐛𝐲 ❤️𝙍𝙐𝙎𝙄𝙏𝙃_𝙈𝘿_𝙑1❤️
 ;
 
       // Send metadata and thumbnail message
@@ -46,16 +46,16 @@ cmd(
 
       // Video download function
       const downloadVideo = async (url, quality) => {
-        const apiUrl = `https://p.oceansaver.in/ajax/download.php?format=${quality}&url=${encodeURIComponent(
+        const apiUrl = https://p.oceansaver.in/ajax/download.php?format=${quality}&url=${encodeURIComponent(
           url
-        )}&api=dfcb6d76f2f6a9894gjkege8a4ab232222´;
+        )}&api=dfcb6d76f2f6a9894gjkege8a4ab232222;
         const response = await axios.get(apiUrl);
 
         if (response.data && response.data.success) {
           const { id, title } = response.data;
 
           // Wait for download URL generation
-          const progressUrl = `https://p.oceansaver.in/ajax/progress.php?id=${id}´;
+          const progressUrl = https://p.oceansaver.in/ajax/progress.php?id=${id};
           while (true) {
             const progress = await axios.get(progressUrl);
             if (progress.data.success && progress.data.progress === 1000) {
@@ -80,7 +80,7 @@ cmd(
         from,
         {
           video: video.buffer,
-          caption: `🎥 *${video.title}*\n\n𝐌𝐚𝐝𝐞 𝐛𝐲 ❤️𝙍𝙐𝙎𝙄𝙏𝙃_𝙈𝘿_𝙑1❤️´,
+          caption: 🎥 *${video.title}*\n\n𝐌𝐚𝐝𝐞 𝐛𝐲 ROBIN MAX,
         },
         { quoted: mek }
       );
@@ -88,7 +88,7 @@ cmd(
       reply("*RUSITH_MD_V1* 🎥❤️");
     } catch (e) {
       console.error(e);
-      reply(`❌ Error: ${e.message}´);
+      reply(❌ Error: ${e.message});
     }
   }
 );
